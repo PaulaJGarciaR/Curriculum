@@ -5,3 +5,10 @@ img{
 body{
     background-color: rgb(247, 211, 186);
 }
+img{
+    width: 200px;
+    height: 100px;
+}
+tr:hover{
+    background-color: cornsilk;
+}
