@@ -6,9 +6,25 @@ body{
     background-color: rgb(247, 211, 186);
 }
 img{
-    width: 200px;
-    height: 100px;
+    width: 30%;
+    height: 15%;
 }
 tr:hover{
     background-color: cornsilk;
+}
+
+input {
+    background-color: rgb(255, 238, 161);
+ 
+}
+.inputcolor{
+    background-color: rgb(255, 167, 126);
+  
+    
+}
+#contraseña{
+    background-color: rgb(216, 255, 177);
+   color: darkgreen;
+   border:1px solid;
+   border-color: darkgreen ;
 }
