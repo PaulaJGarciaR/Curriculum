@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(194, 241, 255);
+        }
+    </style>
+    <h1>Bienvendo a la seccion Multimedia</h1>
+    <a href="../index.html">Regresar a Pagina Inicial</a>
+    <h2>ImagenesAlternativas</h2>
+    <picture>
+        <source srcset="../img/imagenAlternativaUno.webp" width="1024px">
+        <img src="../img/imagenAlternativaDos.jpg" alt="">
+    </picture>
+    <h2>Imagenes Responsive</h2>
+    <picture>
+        <source media="(min-width:1000px)"
+                srcset="../img/imagenTresMultimedia.jpg "/>
+
+        <source media="(min-width:630px)"
+                srcset="../img/imagenDosMultimedia.png "/>
+
+        <source media="(min-width:600px)"
+                srcset="../img/imagenUnoMultimedia.jpg"/>
+
+         <img src="../img/imagenCuatroMultimedia.png" alt="">
+    </picture>
+
+    <h2>Videos</h2>
+    <h3>Etiqueta iframe</h3>
+    <iframe src="https://www.youtube.com/embed/1KAHbxBqLjA" frameborder="0" width="1024px" height="512px"></iframe>
+
+    <h3>VideoAlternativo</h3>
+    <video width="1024px" height="512px" controls autoplay>
+        <source src="../img/VideoAlternativoUno.mp4" type="video/mp4">
+        <source src="../img/VideoAlternativo.webm" type="video/webm" > 
+        <img src="../img/ImagenAlternativoNo.jpeg" alt="Video no Soportado">
+    </video>
+   <h2>Audios Alternativos</h2>
+    <audio controls autoplay >
+        <source src="../img/AudioAlternativoUno.mp3">
+        <source src="../img/AudioAlternativoDos.ogg">
+    </audio>
+    <h2>Subtitulos</h2>
+    <video width="1024px" height="512px" controls >
+        <source src="../img/VideoAlternativo.webm" type="video/webm" >
+        <source src="../img/VideoAlternativoUno.mp4" type="video/mp4">
+        <track src="subs-es.vtt" srclang="es" label="Español" default />
+        <track src="subs-en.vtt" srclang="en" label="English" />
+        <track src="subs-fr.vtt" srclang="fr" label="Français" />
+    </video>
+    
+</body>
+</html>
