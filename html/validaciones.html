@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+</head>
+<body>
+    <h1 class="Titulos">Bienvenido a la seccion de Validaciones</h1>
+    <h2 class="Titulos">Ingreso de Datos</h2>
+    <ul>
+        Color rojo:No cumple las condiciones <br>
+        Color Verde:Usuario y contraseña Aceptados
+    </ul>
+    <form name="formulario" method="post" action="/send.php">
+        Usuario:&nbsp 
+        <input type="text" name="nombre" placeholder="Nombre Completo"
+               minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+" />
+               &nbsp
+               &nbsp
+               Documento de Identidad:&nbsp 
+        <input type="text" name="documento" placeholder="Numero del Documento"
+               minlength="1" maxlength="10" required pattern="[0-9]+" />
+               &nbsp
+               &nbsp
+         Password:&nbsp
+        <input type="password" name="pass" placeholder="Contraseña"
+               minlength="11" required />
+               &nbsp
+               &nbsp
+               <button><b>Enviar</b></button>
+    </form>
+    <br><br>
+     <a href="../index.html">Regresar a pagina de Inicio</a>
+    <style>
+        body{
+            background-color: rgb(172, 208, 255);
+        }
+        input:valid,
+        textarea:valid {
+     background: rgb(115, 240, 115);
+     border:solid 1px rgb(88, 184, 88); 
+    
+      }
+        input:invalid,
+        textarea:invalid {
+    background: rgb(255, 129, 129);
+    border:solid 1px rgb(188, 94, 94); 
+    }
+    form{
+        justify-content: center;
+      display: flex;
+    }
+    .Titulos{
+        text-align: center;
+    }
+    a{
+        justify-content: center;
+        display: flex;
+    }
+    
+    ul{
+        text-align: center;
+        justify-content: center;
+    }
+    button{
+       background-color: rgb(37, 70, 182);color: white;
+       border: solid 1px  rgb(37, 70, 182);
+    }
+    
+    </style>
+    
+</body>
+</html>
