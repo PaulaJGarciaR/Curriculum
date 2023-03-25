@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(183, 191, 255);
+ }
+ table{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    width: 60%;
+ }
+ thead{  
+    background-color: rgb(116, 132, 250);
+}
+img{
+   width: 200px;
+}
+tr:hover{
+    background-color: rgb(241, 160, 140);
+}
+h1{
+   text-align: center;
+}
+td:hover{
+    background-color: rgb(120, 174, 254);
+}
+a{
+    justify-content: center;
+    display: flex;
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(255, 207, 222);
+}
+input {
+    background-color: rgb(255, 238, 161);
+ 
+}
+.inputcolor{
+    background-color: rgb(255, 167, 126);
+  
+    
+}
+#contraseña{
+    background-color: rgb(177, 241, 255);
+   color: darkgreen;
+   border:1px solid;
+   border-color: darkgreen ;
+}
+h1{
+    text-align: center;
+}
+section{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

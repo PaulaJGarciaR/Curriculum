@@ -9,22 +9,27 @@ img{
     width: 30%;
     height: 15%;
 }
-tr:hover{
-    background-color: cornsilk;
+td:hover{
+    background-color: rgb(120, 174, 254);
+}
+table{
+    background-color: rgb(255, 244, 237);
+   margin-left: 20%;
+   margin-right: 20%;
+  justify-content: center;
+  display: block;
+}
+td{
+    width: 2%;
 }
 
-input {
-    background-color: rgb(255, 238, 161);
- 
+#TituloPrincipal{
+   text-align: center;
 }
-.inputcolor{
-    background-color: rgb(255, 167, 126);
-  
-    
+
+h2{
+    text-align: center;
 }
-#contraseña{
-    background-color: rgb(216, 255, 177);
-   color: darkgreen;
-   border:1px solid;
-   border-color: darkgreen ;
+h1{
+    text-align: center;
 }

@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(187, 255, 182);
+}
+h1{
+    text-align: center;
+}
+img{
+   margin-left: 15%;
+}
+a{
+    justify-content: center;
+    display: flex;
+}
