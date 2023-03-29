@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(172, 208, 255);
+}
+input:valid,
+textarea:valid {
+background: rgb(115, 240, 115);
+border:solid 1px rgb(88, 184, 88); 
+
+}
+input:invalid,
+textarea:invalid {
+background: rgb(255, 129, 129);
+border:solid 1px rgb(188, 94, 94); 
+}
+form{
+justify-content: center;
+display: flex;
+}
+.Titulos{
+text-align: center;
+}
+a{
+justify-content: center;
+display: flex;
+}
+
+ul{
+text-align: center;
+justify-content: center;
+}
+button{
+background-color: rgb(37, 70, 182);color: white;
+border: solid 1px  rgb(37, 70, 182);
+}
