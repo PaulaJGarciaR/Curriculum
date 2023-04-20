@@ -178,7 +178,7 @@ text-align: center;
     text-decoration: none;
 }
 .certificado a:hover{
-    color: rgb(29, 127, 255);
+    color: rgb(24, 26, 141);
 }
 .certificado:hover{
     background-color: rgb(105, 183, 247);
@@ -249,7 +249,7 @@ footer{
     border-radius: 5px;
 }
 .partFooter >a:hover{
-    background-color: aqua;
+    background-color: rgb(59, 59, 59);
     transition: all ease-in-out .6s;
     
 }
