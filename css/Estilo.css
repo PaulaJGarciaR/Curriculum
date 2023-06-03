@@ -212,6 +212,54 @@ text-align: center;
     transition: all ease-in-out .5s;
 }
 
+/* ############################################## SECTION INFO-PERSONAL####################### */
+.infopersonal{
+    background-color: #f3f3f3;
+    height: auto;
+}
+.contenedor-infopersonal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+.imagen{
+    width: 30%;
+    background-color: #dadada ;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+.imagen img{
+    width: 100%;
+    padding: 10px;
+}
+
+.infopersonal .title{
+display: block;
+width: 100%;
+text-align: center;
+text-transform: uppercase;
+margin-top:15px ;
+}
+.title h2{
+    padding: 20px 0px;
+}
+.contenido-info{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.descripcion{
+    width: 30%;
+}
+.descripcion p{
+    text-align: justify;
+}
+.imagen:hover{
+    box-shadow: 0px 0px 10px rgb(129, 129, 129);
+    transition: all ease-in-out 0.3s;
+}
 
 /*###############################################*FOOTER*#####################################*/
 footer{
