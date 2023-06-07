@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: pink;
+
+    }
+    #form{
+        width: 40%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .grupo{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 20px;
+    }
+    label{
+    width: 35%;
+    }
+    #enviar{
+        background-color: rgb(226, 96, 118);
+        padding: 5px;
+        font-weight: 700;
+        border-style: none;
+        border-radius: 20px;
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body id="contenedor">
+    <form action="" id="form" autocomplete="off">
+        <h1>REGISTRO</h1>
+        <div class="grupo">
+            <label for="">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div class="grupo">
+            <label for="">Email: </label>
+            <input type="email" id="email">
+        </div>
+        <div class="grupo">
+            <label for="">Contraseña: </label>
+            <input type="password" id="password">
+        </div>
+        <div class="boton">
+         <button type="submit" id="enviar"> ENVIAR </button>
+        </div>
+         <p id="espacioInfo"></p>
+    </form>
+
+
+
+    <script>
+        const form=document.getElementById("form");
+        const name=document.getElementById("name");
+        const email=document.getElementById("email");
+        const password=document.getElementById("password");
+        const espacioinfo=document.getElementById("espacioInfo");
+        form.addEventListener("submit", evento=>{
+            evento.preventDefault();
+            let info=" ";
+            let verificar=false;
+            if(name.value.length<2){
+                info+= "El nombre debe ser mayor a 2 caracteres<br>";
+                verificar=true;
+            }
+            let emailval= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            console.log(emailval.test(email.value));
+            if(!emailval.test(email.value)){
+                info+= "El email es incorrecto<br>";
+                verificar=true;
+            }
+            if(password.value.length<8){
+                info+= "La contraseña debe tener 8 o mas caracteres<br>";
+                verificar=true;
+            }
+            if(verificar){
+                espacioinfo.innerHTML=info;
+            }
+            else{
+                espacioinfo.innerHTML="Enviado con Exito";
+            }
+        })
+
+        
+    </script>
+</body>
+</html>
